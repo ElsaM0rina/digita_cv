@@ -6,7 +6,7 @@ PAGE_TITLE = "Digital CV Elsa| "
 PAGE_ICON = ":smile:"
 NAME = "Elsa Morina"
 DESCRIPTION = """
-Data Scientist  in spatial-sensor data and data-driven decision-making.
+Data Scientist  & AI Engineer in the making.
 """
 
 EMAIL = "elsamorina@example.com"

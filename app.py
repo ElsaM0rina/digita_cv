@@ -24,7 +24,7 @@ with open(resume_file, "rb") as pdf_file:
 profile_pic = Image.open(profile_pic_file)
 
 # Sidebar navigation
-page = st.sidebar.radio("Navigate", ["Home", "About", "Contact"])
+page = st.sidebar.radio("Navigate", ["Home", "About", "Projects"])
 
 if page == "Home":
     # --- HERO SECTION ---
@@ -124,10 +124,14 @@ elif page == "About":
     st.write("📫", EMAIL)
     st.write(f"Feel free to connect with me on [LinkedIn]({LINKEDIN_URL}).")
 
-elif page == "Contact":
-    st.title("Contact Me")
+elif page == "Projects":
+    st.title("Project Frontend 1")
     st.write(f"""
-    For any inquiries, please contact me on my email: {EMAIL} or on my phone number: +1 222 333 444. 
+    This project is a full-stack software application designed to solve real-world problems through an intuitive user interface and efficient backend architecture. It incorporates modern development practices, scalable design patterns, and secure data management to deliver a reliable and user-friendly experience. The application includes features such as user authentication, data processing, responsive design, and API integration. The project demonstrates proficiency in software development, database management, system design, and deployment workflows while emphasizing code quality, maintainability, and performance optimization.
+    """)
+    st.write("\n")
+    st.title("Project Frontend 2")
+    st.write(f"""
+    This project is a full-stack software application designed to solve real-world problems through an intuitive user interface and efficient backend architecture. It incorporates modern development practices, scalable design patterns, and secure data management to deliver a reliable and user-friendly experience. The application includes features such as user authentication, data processing, responsive design, and API integration. The project demonstrates proficiency in software development, database management, system design, and deployment workflows while emphasizing code quality, maintainability, and performance optimization.
     """)
 
-    st.write("Thank you for visiting my site!")

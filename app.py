@@ -24,7 +24,7 @@ with open(resume_file, "rb") as pdf_file:
 profile_pic = Image.open(profile_pic_file)
 
 # Sidebar navigation
-page = st.sidebar.radio("Navigate", ["Home", "About"])
+page = st.sidebar.radio("Navigate", ["Home", "About", "Contact"])
 
 if page == "Home":
     # --- HERO SECTION ---
@@ -123,3 +123,11 @@ elif page == "About":
     # Show LinkedIn and Email only on the About page
     st.write("📫", EMAIL)
     st.write(f"Feel free to connect with me on [LinkedIn]({LINKEDIN_URL}).")
+
+elif page == "Contact":
+    st.title("Contact Me")
+    st.write(f"""
+    For any inquiries, please contact me on my email: {EMAIL} or on my phone number: +1 222 333 444. 
+    """)
+
+    st.write("Thank you for visiting my site!")
